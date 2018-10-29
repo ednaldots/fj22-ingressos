@@ -9,8 +9,16 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
+<project...>
+	<-- restante omitido...-->
+	<developers>
+		<developer>
+			<name>John</name>
+			<email></email>jdoe@example.com</email>
+		</developer>
+		</developers>
 
-    <properties>
+ <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <failOnMissingWebXml>false</failOnMissingWebXml>
         <maven.compiler.source>1.8</maven.compiler.source>
