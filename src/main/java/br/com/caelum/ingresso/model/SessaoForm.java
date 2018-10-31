@@ -1,7 +1,6 @@
 package br.com.caelum.ingresso.model;
 
 import java.time.LocalTime;
-
 import javax.validation.constraints.NotNull;
 
 import org.springframework.format.annotation.DateTimeFormat;
@@ -25,11 +24,11 @@ public class SessaoForm {
 
 	private LocalTime horario;
 	
-	public Sessão toSessao(SalaDao salaDao, FilmeDao filmeDao){ 
+	public Sessao toSessao(SalaDao salaDao, FilmeDao filmeDao){ 
 	Filme filme = filmeDao.findOne(filmeId); 
 	Sala sala = salaDao.findOne(salaId);
 	
-	Sessao sessão = new Sessao(this.horario, filme, sala); 
+	Sessao sessao = new Sessao(this.horario, filme, sala); 
 	
 	return toSessao(null, null);
 	}
