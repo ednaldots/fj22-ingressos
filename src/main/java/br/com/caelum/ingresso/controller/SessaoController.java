@@ -34,9 +34,8 @@ import br.com.caelum.ingresso.validacao.GerenciadorDeSessao;
 
 	
 	@GetMapping("/admin/sessao")
-	public ModelAndView form(@RequestParam("salald") Integer salald, SessaoForm form) { 
+	public ModelAndView form(@RequestParam("salaId") Integer salaId, SessaoForm form) { 
 		
-		Integer salaId = null;
 		form.setSalaId(salaId);
 		
 		ModelAndView modelAndView = new ModelAndView("sessao/sessao");
